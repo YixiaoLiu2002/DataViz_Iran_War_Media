@@ -67,8 +67,9 @@ chart = alt.Chart(daily_long).mark_line(opacity=0.9).encode(
         scale=alt.Scale(scheme='tableau10')
     )
 ).properties(
-    height=400,
+    width=700,
+    height=500,
     title='Framing Scores Over Time'
 )
 
-st.altair_chart(chart, width='stretch')
+st.altair_chart(chart)
